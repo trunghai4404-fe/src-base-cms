@@ -1,3 +1,3 @@
-export const ACCESS_TOKEN = "access_token"
-export const REFRESH_TOKEN = "refresh_token"
-export const USER_DATA = "user_data"
+export const BAKERY_ACCESS_TOKEN = "bakery_access_token";
+export const BAKERY_REFRESH_TOKEN = "bakery_refresh_token";
+export const BAKERY_USER_DATA = "bakery_user_data";

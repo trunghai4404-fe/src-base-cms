@@ -1,1 +1,82 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: 'Nunito', sans-serif;
+
+  --color-surface: #F8F1EC;
+  --color-surface-dim: #E9DDD6;
+  --color-surface-bright: #FFFDFC;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-low: #FCF7F3;
+  --color-surface-container: #F8EFEB;
+  --color-surface-container-high: #F3E7E2;
+  --color-surface-container-highest: #EBDCD6;
+  --color-background: #F8F1EC;
+
+  --color-on-surface: #4B4140;
+  --color-on-surface-variant: #806D67;
+  --color-inverse-surface: #403638;
+  --color-inverse-on-surface: #FFF8F5;
+
+  --color-primary: #E2B2C0;
+  --color-primary-hover: #D49DB0;
+  --color-on-primary: #4A2E37;
+  --color-primary-container: #F7E4E9;
+  --color-on-primary-container: #5E3642;
+  --color-inverse-primary: #F0C6D2;
+
+  --color-secondary: #9A7668;
+  --color-on-secondary: #FFFFFF;
+  --color-secondary-container: #E9D8D0;
+  --color-on-secondary-container: #60463D;
+
+  --color-tertiary: #9BAF98;
+  --color-on-tertiary: #FFFFFF;
+  --color-tertiary-container: #DCE5D8;
+  --color-on-tertiary-container: #465343;
+
+  --color-outline: #B89D93;
+  --color-outline-variant: #E4CEC6;
+  --color-border-low: rgba(184, 157, 147, 0.35);
+
+  --color-rose-soft: #E7B7C2;
+  --color-rose-light: #F5DDE2;
+  --color-rose-pale: #FAECEF;
+  --color-cream: #FFF8F3;
+  --color-cream-dark: #F0E3DA;
+  --color-cocoa: #80645A;
+  --color-cocoa-dark: #5B4741;
+  --color-muted-gold: #B79A6A;
+  --color-champagne: #E8D7B8;
+  --color-sage: #A9B8A3;
+  --color-sage-light: #E3E9DF;
+
+  --color-error: #B85C62;
+  --color-on-error: #FFFFFF;
+  --color-error-container: #F6D9DA;
+  --color-on-error-container: #6F252B;
+
+  --color-success: #7E9A79;
+  --color-on-success: #FFFFFF;
+  --color-success-container: #DDE8DA;
+  --color-on-success-container: #40533D;
+
+  --color-warning: #B9955B;
+  --color-on-warning: #FFFFFF;
+  --color-warning-container: #F3E4C9;
+  --color-on-warning-container: #624C25;
+
+  --radius-card: 8px;
+  --radius-card-lg: 12px;
+  --radius-button: 6px;
+  --radius-input: 6px;
+  --radius-modal: 12px;
+  --radius-badge: 4px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+}
