@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { AxiosError, InternalAxiosRequestConfig } from 'axios';
 import Cookies from 'js-cookie';
-import { ACCESS_TOKEN } from '@/config/Cookies';
+import { BAKERY_ACCESS_TOKEN } from '@/config/Cookies';
 import { ApiError } from './api-error';
 
 export const axiosClient = axios.create({
@@ -14,7 +14,7 @@ export const axiosClient = axios.create({
 
 axiosClient.interceptors.request.use(
     (config: InternalAxiosRequestConfig) => {
-        const accessToken = Cookies.get(ACCESS_TOKEN);
+        const accessToken = Cookies.get(BAKERY_ACCESS_TOKEN);
 
         if (accessToken && config.headers) {
             config.headers.Authorization = `Bearer ${accessToken}`;
@@ -39,7 +39,7 @@ axiosClient.interceptors.response.use(
             const data = error.response.data;
 
             if (status === 401) {
-                Cookies.remove(ACCESS_TOKEN);
+                Cookies.remove(BAKERY_ACCESS_TOKEN);
             }
 
             const errorMessage = data?.message || data?.title || 'Đã có lỗi xảy ra từ máy chủ';
